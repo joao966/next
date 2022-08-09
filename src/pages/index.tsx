@@ -1,10 +1,21 @@
 import React from 'react';
-import styles from '../styles/Home.module.css'
+import DefaultPage from '../atoms/wapperPage';
+import Layout from '../atoms/layout';
+import Content from '../atoms/content';
+import ContentWrapper from '../atoms/wapperContent';
 
 export default function Home(): JSX.Element {
   return (
-    <div className={styles.container}>
-      
-    </div>
+    <DefaultPage>
+      <Layout>
+        <Layout>
+          <Content>
+            <ContentWrapper>
+              Hello World
+            </ContentWrapper>
+          </Content>
+        </Layout>
+      </Layout>
+    </DefaultPage>
   )
 }
